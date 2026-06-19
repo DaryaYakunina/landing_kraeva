@@ -1,3 +1,4 @@
+
 .section {
     height: 100vh;
     background: white;
@@ -13,39 +14,34 @@
     gap: 20px;
     padding: 90px 0;
     box-sizing: border-box;
-
-    --bg-image1: url('./public/images/services_img_1.jpg');
-    --bg-image2: url('./public/images/services_img_2.jpg');
-    --bg-image3: url('./public/images/services_img_3.jpg');
-    --bg-image4: url('./public/images/services_img_4.jpg');
 }
 
 .item1 {
     grid-area: item_1;
     background-image: 
         linear-gradient(to bottom, rgba(51, 51, 51, 0) 70%, #333333 100%),
-        var(--bg-image1);
+        url('../../../public/images/services_img_1.jpg');
 }
 
 .item2 {
     grid-area: item_2;
     background-image: 
         linear-gradient(to bottom, rgba(51, 51, 51, 0) 35%, #333333 100%),
-        var(--bg-image2);
+        url('../../../public/images/services_img_2.jpg');
 }
 
 .item3 {
     grid-area: item_3;
     background-image: 
         linear-gradient(to bottom, rgba(51, 51, 51, 0) 50%, #333333 100%),
-        var(--bg-image3);
+        url('../../../public/images/services_img_3.jpg');
 }
 
 .item4 {
     grid-area: item_4;
     background-image: 
         linear-gradient(to bottom, rgba(51, 51, 51, 0) 50%, #333333 100%),
-        var(--bg-image4);
+        url('../../../public/images/services_img_4.jpg');
 }
 
 @media (max-width: 1024px) {
@@ -66,25 +62,25 @@
     .item1 {
         background-image: 
             linear-gradient(to bottom, rgba(51, 51, 51, 0) 10%, #333333 100%),
-            var(--bg-image1);
+            url('../../../public/images/services_img_1.jpg');
     }
 
     .item2 {
         background-image: 
             linear-gradient(to bottom, rgba(51, 51, 51, 0) 10%, #333333 100%),
-            var(--bg-image2);
+            url('../../../public/images/services_img_2.jpg');
     }
 
     .item3 {
         background-image: 
             linear-gradient(to bottom, rgba(51, 51, 51, 0) 10%, #333333 100%),
-            var(--bg-image3);
+            url('../../../public/images/services_img_3.jpg');
     }
 
     .item4 {
         background-image: 
             linear-gradient(to bottom, rgba(51, 51, 51, 0) 0%, #333333 100%),
-            var(--bg-image4);
+            url('../../../public/images/services_img_4.jpg');
     }
 }
 

@@ -1,4 +1,8 @@
 import type { IServicesDescriptionPage } from './components/services/ServicesDescriptionPage.tsx';
+import services_description from '../public/images/services_description.jpg';
+import services_description_2 from '../public/images/services_description_2.jpg';
+import services_description_3 from '../public/images/services_description_3.jpg';
+import services_description_4 from '../public/images/services_description_4.jpg';
 
 export const consultationServiceData: IServicesDescriptionPage = {
     title: 'КОНСУЛЬТАЦИЯ ДИЗАЙНЕРА ИНТЕРЬЕРОВ',
@@ -33,7 +37,7 @@ export const consultationServiceData: IServicesDescriptionPage = {
         title: '',
         data: [],
         className: 'item_img',
-        img: './public/images/services_description.jpg'
+        img: services_description
     },
     {
         id: '5',
@@ -69,7 +73,7 @@ export const equipmentServiceData: IServicesDescriptionPage = {
         title: '',
         data: [],
         className: 'item_img',
-        img: './public/images/services_description_2.jpg'
+        img: services_description_2
     },
     {
         id: '4',
@@ -108,7 +112,7 @@ export const developmentServiceData: IServicesDescriptionPage = {
         title: '',
         data: [],
         className: 'item_img',
-        img: './public/images/services_description_3.jpg'
+        img: services_description_3
     },  
     {
         id: '3',
@@ -173,7 +177,7 @@ export const supervisionServiceData: IServicesDescriptionPage = {
         title: '',
         data: [],
         className: 'item_img',
-        img: './public/images/services_description_4.jpg'
+        img: services_description_4
     }, 
     {
         id: '5',
