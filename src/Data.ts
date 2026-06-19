@@ -33,7 +33,7 @@ export const consultationServiceData: IServicesDescriptionPage = {
         title: '',
         data: [],
         className: 'item_img',
-        img: '../../../public/images/servicesImg/services_description.jpg'
+        img: './public/images/services_description.jpg'
     },
     {
         id: '5',
@@ -69,7 +69,7 @@ export const equipmentServiceData: IServicesDescriptionPage = {
         title: '',
         data: [],
         className: 'item_img',
-        img: '../../../public/images/servicesImg/services_description_2.jpg'
+        img: './public/images/services_description_2.jpg'
     },
     {
         id: '4',
@@ -108,7 +108,7 @@ export const developmentServiceData: IServicesDescriptionPage = {
         title: '',
         data: [],
         className: 'item_img',
-        img: '../../../public/images/servicesImg/services_description_3.jpg'
+        img: './public/images/services_description_3.jpg'
     },  
     {
         id: '3',
@@ -173,7 +173,7 @@ export const supervisionServiceData: IServicesDescriptionPage = {
         title: '',
         data: [],
         className: 'item_img',
-        img: '../../../public/images/servicesImg/services_description_4.jpg'
+        img: './public/images/services_description_4.jpg'
     }, 
     {
         id: '5',

@@ -17,7 +17,7 @@ function MainScreen() {
                 Пространства, наполненные вдохновением
             </p>
             <HashLink smooth to="/#consultation" className={styles.circleBtn}>
-                <img className={styles.icon} src="../../public/images/icon-phone-call.png" alt="Телефонная трубка" />
+                <img className={styles.icon} src="./public/images/icon-phone-call.png" alt="Телефонная трубка" />
             </HashLink>
         </div>
       </div>

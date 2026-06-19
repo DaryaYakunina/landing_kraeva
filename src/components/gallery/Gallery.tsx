@@ -8,15 +8,15 @@ interface IGalleryItem {
 }
 
 const galleryData: IGalleryItem[] = [
-    { src: "../../../public/images/galleryImg/img1.jpg" },
-    { src: "../../../public/images/galleryImg/img2.jpg" },
-    { src: "../../../public/images/galleryImg/img3.jpg" },
-    { src: "../../../public/images/galleryImg/img4.jpg" },
-    { src: "../../../public/images/galleryImg/img5.jpg" },
-    { src: "../../../public/images/galleryImg/img6.jpg" },
-    { src: "../../../public/images/galleryImg/img7.jpg" },
-    { src: "../../../public/images/galleryImg/img8.jpg" },
-    { src: "../../../public/images/galleryImg/img9.jpg" }
+    { src: "./public/images/img1.jpg" },
+    { src: "./public/images/img2.jpg" },
+    { src: "./public/images/img3.jpg" },
+    { src: "./public/images/img4.jpg" },
+    { src: "./public/images/img5.jpg" },
+    { src: "./public/images/img6.jpg" },
+    { src: "./public/images/img7.jpg" },
+    { src: "./public/images/img8.jpg" },
+    { src: "./public/images/img9.jpg" }
 ];
 
 function Gallery() {
