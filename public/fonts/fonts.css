@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('./CenturyGothic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* Важный нюанс для производительности */
+}
+
+@font-face {
+  font-family: 'CenturyGothic_bold';
+  src: url('./CenturyGothic_bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Betmo';
+  src: url('./Betmo.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

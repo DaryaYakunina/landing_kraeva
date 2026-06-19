@@ -1,0 +1,102 @@
+.section {
+    position: relative;
+    height: 100vh;  
+    background-color: white;
+    overflow: hidden;
+}
+
+.section::after {
+    content: "ПОРТФОЛИО";
+    position: absolute;
+    top: 60%;
+    left: 100%; 
+    font-size: 200px;
+    font-weight: 700;
+    color: #f0f0f0;
+    animation: scroll 8s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0%);
+    }
+    100% {
+        transform: translate(-200%);
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.image {
+    background: #333333;
+    cursor: pointer;
+    overflow: hidden; 
+    border-radius: 2px 30px 2px 30px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 65%;
+        display: block; 
+        -webkit-mask-image: linear-gradient(to bottom, black 5%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 5%, transparent 100%);
+        transition: mask-image 5s ease, -webkit-mask-image 2s ease;
+    }
+
+    img:hover {
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, black 100%);
+        mask-image: linear-gradient(to bottom, black 0%, black 100%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto; /* высота по содержимому */
+        gap: 16px;
+        // padding: 60px 10px 40px 10px;
+    }
+
+    .section::after {
+        top: 65%;
+    }
+
+    .image:nth-child(n+7) {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        height: 80vh;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; /* высота по содержимому */
+        gap: 12px;
+    }
+
+    .section::after {
+        top: 35%;
+        font-size: 150px;
+        color: #dadada;
+    }
+
+    .image:nth-child(n+4) {
+        display: none;
+    }
+}
+
+
+

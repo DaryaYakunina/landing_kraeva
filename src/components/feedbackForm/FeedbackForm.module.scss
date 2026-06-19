@@ -1,0 +1,154 @@
+.section {
+    background-image: 
+        linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+        url('../../../public/images/form_screen.jpg');    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.overlay {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.60); 
+  backdrop-filter: blur(4px);
+  border-radius: 2px 30px 2px 30px;
+  padding: 3rem 2rem;
+}
+
+.title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.fieldsLeft {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.fieldsRight {
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.fieldGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.input,
+.textarea {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+  padding: 0.8rem 1rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #ffffff;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.textarea {
+   flex: 1;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.inputError {
+  border-color: #f7ab1f;
+}
+
+.errorText {
+  color: #f7ab1f;
+  font-size: 0.6rem;
+  line-height: 1;
+  margin-top: 0.1rem;
+}
+
+.submitButton {
+    background: var(--terracotta);
+    border: none;
+    border-radius: 2px;
+    padding: 0.8rem 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.2s;
+}
+
+.submitButton:hover {
+    background: var(--marsh);
+    transform: scale(1.02);
+}
+
+.submitButton:active {
+    transform: scale(0.98);
+}
+
+// /* Адаптивность */
+@media (max-width: 768px) {
+    .overlay {
+      padding: 2rem 1.5rem;
+    }
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .form {
+      flex-direction: column;
+      gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay {
+        padding: 1.5rem 1rem;
+    }
+    .title {
+        font-size: 1.4rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+}
